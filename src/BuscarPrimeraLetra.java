@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class BuscarPrimeraLetra {
 
@@ -17,7 +18,12 @@ public class BuscarPrimeraLetra {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		primeraLetra("Dame mi chapa");
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Introduce un palabra o frase");
+		String palabra = scan.nextLine();
+		
+		char letra = primeraLetra(palabra);
+		System.out.println("la primera letra de tu palabra/frase es: " + letra);
 	}
 
 }
